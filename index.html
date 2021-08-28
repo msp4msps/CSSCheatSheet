@@ -1,101 +1,142 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>CSS Snippet Cheat Sheet</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-        <h1>CSS Snippet Cheat Sheet</h1>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla deserunt
-            ea molestiae ipsum vel est, dolorem earum at placeat ab.
-        </p>
+      <h1>CSS Snippet Cheat Sheet</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla deserunt
+        ea molestiae ipsum vel est, dolorem earum at placeat ab.
+      </p>
     </header>
 
     <!-- Body -->
     <main>
-        <!-- Cards -->
+      <!-- Cards -->
 
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Flexbox Row</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Use these three properties to cerate a flexbox row layout.
-                </h6>
-                <p class="code-snippet">.row{ display:flex; flex-direction: row; flex-wrap: wrap;</p>
-            </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Flexbox Row</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Use these three properties to cerate a flexbox row layout.
+          </h6>
+          <pre class="code-snippet">
+                  <code>
+                    .row {
+                      display: flex;
+                      flex-direction: row;
+                      flex-wrap: wrap;
+                    }
+                  </code>
+            </pre>
         </div>
-
-
-
-        <!-- 
-        <div class="cards">
-            <section class="card">
-                <header>Flexbox Row</header>
-                <p>Use these three properties to cerate a flexbox row layout.</p>
-                <p class="codeSnippet">
-                    .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-                </p>
-            </section>
-            <section class="card">
-                <header>Flexbox Row</header>
-                <p>Use these three properties to cerate a flexbox row layout.</p>
-                <p class="codeSnippet">
-                    .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-                </p>
-            </section>
-            <section class="card">
-                <header>Flexbox Row</header>
-                <p>Use these three properties to cerate a flexbox row layout.</p>
-                <p class="codeSnippet">
-                    .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-                </p>
-            </section>
-            <section class="card">
-                <header>Flexbox Row</header>
-                <p>Use these three properties to cerate a flexbox row layout.</p>
-                <p class="codeSnippet">
-                    .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-                </p>
-            </section>
-            <section class="card">
-                <header>Flexbox Row</header>
-                <p>Use these three properties to cerate a flexbox row layout.</p>
-                <p class="codeSnippet">
-                    .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-                </p>
-            </section>
-            <section class="card">
-                <header>Flexbox Row</header>
-                <p>Use these three properties to cerate a flexbox row layout.</p>
-                <p class="codeSnippet">
-                    .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-                </p>
-            </section>
-            <section class="card">
-                <header>Flexbox Row</header>
-                <p>Use these three properties to cerate a flexbox row layout.</p>
-                <p class="codeSnippet">
-                    .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-                </p>
-            </section>
-        </div> -->
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Flexbox Row</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Use these three properties to cerate a flexbox row layout.
+          </h6>
+          <pre class="code-snippet">
+                  <code>
+                    .column {
+                      display: flex;
+                      flex-direction: column
+                    }
+                  </code>
+              </pre>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">CSS Grid Layout</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Build a 12-column layout using CSS Grid
+          </h6>
+          <pre class="code-snippet">
+                  <code>
+                    .grid {
+                      display: grid;
+                      width: 100%;
+                      grid-template-columns: repeat(12, 1fr);
+                    }
+                  </code>
+              </pre>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Linear Gradients</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            This will create a background linear gradient from top to bottom.
+          </h6>
+          <pre class="code-snippet">
+                  <code>
+                    .linear-gradient-background {
+                      background-image: linear-gradient(
+                        rgba(232, 102, 236, 0.3) 0%,
+                        rgba(232, 102, 236, 0.6) 100%
+                      );
+                    }
+                  </code>
+              </pre>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Box Transition Glow</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Use transition and box shadows to glow on hover.
+          </h6>
+          <pre class="code-snippet">
+                  <code>
+                    .code-card .card-header {
+                      border-radius: 8px;
+                      transition: all 0.5s ease-in-out;
+                    }
+                    .code-card:hover,
+                    .code-card:hover .card-header {
+                        box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+                    }                    
+                  </code>
+              </pre>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Overlay Card with Title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Use position properties and negative margins to raise elements
+            higher than their natural starting point.
+          </h6>
+          <pre class="code-snippet">
+                  <code>
+                    .card-header {
+                      position: relative;
+                      margin-top: -20px;
+                    }                 
+                  </code>
+              </pre>
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer>
-        <h3>
-            Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-            window!
-        </h3>
+      <h3>Made with 💟 and CSS</h3>
     </footer>
-</body>
-
+  </body>
 </html>
