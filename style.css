@@ -43,14 +43,29 @@ ol,
 ul {
   list-style: none;
 }
+/* END OF RESET */
 
-.cards {
+/*Styling */
+body {
+  background-color: gray;
+}
+p {
+  text-align: center;
+  font-size: x-large;
+}
+h1 {
+  font-size: xx-large;
+  text-align: center;
+  color: purple;
+  font-family: "Oswald", sans-serif;
+}
+.card {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   background-color: gray;
 }
-.cards > section {
+/* .cards > section {
   background-color: lightpink;
   height: 400px;
   width: 400px;
@@ -60,4 +75,4 @@ ul {
   font-size: 30px;
 }
 header {
-}
+} */
