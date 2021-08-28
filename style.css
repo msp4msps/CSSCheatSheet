@@ -46,14 +46,18 @@ ul {
 
 .cards {
   display: flex;
+  flex-direction: row;
   flex-wrap: nowrap;
   background-color: gray;
 }
 .cards > section {
   background-color: lightpink;
-  width: 100px;
+  height: 400px;
+  width: 400px;
   margin: 10px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+}
+header {
 }
