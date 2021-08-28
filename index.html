@@ -13,8 +13,9 @@
     <header>
       <h1>CSS Snippet Cheat Sheet</h1>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla deserunt
-        ea molestiae ipsum vel est, dolorem earum at placeat ab.
+        Ever have trouble recalling the exact syntax for your favorite CSS code?
+        Give it a permanent home and add it to this page! Select any snippet
+        below and it'll automatically select all of the code for you to copy.
       </p>
     </header>
 
@@ -25,61 +26,90 @@
         <section class="card">
           <header>Flexbox Row</header>
           <p>Use these three properties to cerate a flexbox row layout.</p>
-          <p class="codeSnippet">
-            .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-          </p>
+          <pre class="codeSnippet">
+            <code class="language-css">
+              .row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+              };
+            </code>
+          </pre>
         </section>
         <section class="card">
-          <header>Flexbox Row</header>
-          <p>Use these three properties to cerate a flexbox row layout.</p>
-          <p class="codeSnippet">
-            .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-          </p>
+          <header>Flexbox Column</header>
+          <p>Use this to create a Flexbox column layout.</p>
+          <pre class="codeSnippet">
+            <code class="language-css">
+              .column {
+                display: flex;
+                flex-direction: column
+              };
+            </code>
+          </pre>
         </section>
         <section class="card">
-          <header>Flexbox Row</header>
-          <p>Use these three properties to cerate a flexbox row layout.</p>
-          <p class="codeSnippet">
-            .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-          </p>
+          <header>CSS Grid Layout</header>
+          <p>Build a 12-column layout using CSS Grid</p>
+          <pre class="codeSnippet">
+            <code class="language-css">
+              .grid {
+                display: grid;
+                width: 100%;
+                grid-template-columns: repeat(12, 1fr);
+              };
+            </code>
+          </pre>
         </section>
         <section class="card">
-          <header>Flexbox Row</header>
-          <p>Use these three properties to cerate a flexbox row layout.</p>
-          <p class="codeSnippet">
-            .row{ display:flex; flex-direction: row; flex-wrap: wrap;
+          <header>Linear Gradients</header>
+          <p>
+            This will create a background linear gradient from top to bottom.
           </p>
+          <pre class="codeSnippet">
+            <code class="language-css">
+              .linear-gradient-background {
+                background-image: linear-gradient(
+                  rgba(232, 102, 236, 0.3) 0%,
+                  rgba(232, 102, 236, 0.6) 100%
+                );
+              };
+            </code>
+          </pre>
         </section>
         <section class="card">
-          <header>Flexbox Row</header>
-          <p>Use these three properties to cerate a flexbox row layout.</p>
-          <p class="codeSnippet">
-            .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-          </p>
+          <header>Box Transition Glow</header>
+          <p>Use transition and box shadows to glow on hover.</p>
+          <pre class="codeSnippet">
+            <code class="language-css">
+              .code-card .card-header {
+                border-radius: 8px;
+                transition: all 0.5s ease-in-out;
+              };
+            </code>
+          </pre>
         </section>
         <section class="card">
-          <header>Flexbox Row</header>
-          <p>Use these three properties to cerate a flexbox row layout.</p>
-          <p class="codeSnippet">
-            .row{ display:flex; flex-direction: row; flex-wrap: wrap;
+          <header>Overlay Card with Title</header>
+          <p>
+            Use position properties and negative margins to raise elements
+            higher than their natural starting point.
           </p>
-        </section>
-        <section class="card">
-          <header>Flexbox Row</header>
-          <p>Use these three properties to cerate a flexbox row layout.</p>
-          <p class="codeSnippet">
-            .row{ display:flex; flex-direction: row; flex-wrap: wrap;
-          </p>
+          <pre class="codeSnippet">
+            <code class="language-css">
+              .card-header {
+                position: relative;
+                margin-top: -20px;
+              };
+            </code>
+          </pre>
         </section>
       </div>
     </main>
 
     <!-- Footer -->
     <footer>
-      <h3>
-        Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-        window!
-      </h3>
+      <h3>Made with 💟 and CSS</h3>
     </footer>
   </body>
 </html>
